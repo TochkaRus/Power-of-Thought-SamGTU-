@@ -1,0 +1,605 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 580px;
+  margin: 0 auto;
+}
+
+a {
+  color: #6653d9;
+}
+
+a:focus {
+  outline-color: #b6aaff;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////*/
+/*/////////////// Страница авторизации ////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////*/
+.page1 { 
+  display: flex;
+  flex-direction: column;
+  min-width: 640px;
+  width: 1920px;
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Verdana", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #15160d;
+}
+.main1 {
+  flex: 1 0 auto;
+  background-size: 1920px 740px;
+  background-image: url("img/auth_background.jpg");
+}
+
+/*///////////// Шапка ////////////////*/
+.page1-header {
+  flex: 0 0 auto;
+  margin-bottom: 0px;
+  background-color: #00ced1;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.page1-header .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 290px 212px;
+  background-color: #00ced1;
+}
+
+.page1-header a {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page1-title {
+  margin-left: 20px;
+  margin-bottom: 4px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000000;
+}
+
+.page1-button {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 7px;
+  padding-right: 16px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #DCDCDC;
+  cursor: pointer;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.page1-button::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 7px;
+  left: 12px;
+}
+
+.page1-button:active { 
+  opacity: 0.8;
+}
+
+.page1-button:focus,
+.page1-button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.page1-button:focus {
+  outline-color: #C7FCEC;
+}
+
+.page1-button:focus::before,
+.page1-button:hover::before {
+}
+
+/*///////// Блок Авторизации ///////////*/
+.form_auth_block{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+	background-color: transparent;
+    border-radius: 4px;
+}
+.form_auth_block_content{
+  margin: 10% 0 0 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #ffffff88;
+}
+.form_auth_block_head_text{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+	font-color: ;
+    background-color: transparent;
+}
+.form_auth_block label{
+    display: block;
+    text-align: center;
+    padding: 2px;
+    background-color: transparent;
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.form_auth_block input{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 45px;
+  border-radius: 10px;  
+  border:none;
+  outline: none;
+}
+input:focus {
+  color: #000000;
+  border-radius: 10px;
+  border: 2px solid #436fea;
+}
+.form_auth_button{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////*/
+/*/////////////// Страница с диаграммами //////////////////////////*/
+/*/////////////////////////////////////////////////////////////////*/
+.page2 {
+  display: flex;
+  flex-direction: column;
+  min-width: 4200px;
+  width: 4200px;
+  max-width: 6000px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Verdana", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #eae9f2;
+}
+
+.main2 {
+  flex: 1 0 auto;
+  background-color: #ffffff;
+}
+
+/*///////////// Шапка ////////////////*/
+.page2-header {
+  flex: 0 0 auto;
+  margin-bottom: 0px;
+  background-color: #00ced1;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.page2-header .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 290px 212px;
+  background-color: #00ced1;
+}
+
+.page2-header a {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page2-title {
+  margin-left: 20px;
+  margin-bottom: 4px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000000; 
+}
+
+.page2-button {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 7px;
+  padding-right: 16px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #DCDCDC;
+  cursor: pointer;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.page2-button::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 7px;
+  left: 12px;
+}
+
+.page2-button:active { 
+  opacity: 0.8;
+}
+
+.page2-button:focus,
+.page2-button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.page2-button:focus {
+  outline-color: #C7FCEC;
+}
+
+.page2-button:focus::before,
+.page2-button:hover::before {
+}
+
+/*///////////// Тело /////////////////*/
+.diagrams {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////*/
+/*//////////// Страница с табличными значениями ///////////////////*/
+/*/////////////////////////////////////////////////////////////////*/
+.page3 {
+  display: flex;
+  flex-direction: column;
+  min-width: 2350px;
+  width: 2350px;
+  max-width: 6000px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Verdana", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #eae9f2;
+}
+
+.main3 {
+  flex: 1 0 auto;
+  background-color: #ffffff;
+}
+
+/*///////////// Шапка ////////////////*/
+.page3-header {
+  flex: 0 0 auto;
+  margin-bottom: 0px;
+  background-color: #00ced1;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.page3-header .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 290px 212px;
+  background-color: #00ced1;
+}
+
+.page3-header a {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page3-title {
+  margin-left: 20px;
+  margin-bottom: 4px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000000; 
+}
+
+.page3-button {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 7px;
+  padding-right: 16px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #DCDCDC;
+  cursor: pointer;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.page3-button::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 7px;
+  left: 12px;
+}
+
+.page3-button:active { 
+  opacity: 0.8;
+}
+
+.page3-button:focus,
+.page3-button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.page3-button:focus {
+  outline-color: #C7FCEC;
+}
+
+.page3-button:focus::before,
+.page3-button:hover::before {
+}
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////*/
+/*/////////////// Страница с подрядчиками /////////////////////////*/
+/*/////////////////////////////////////////////////////////////////*/
+.page4 {
+  display: flex;
+  flex-direction: column;
+  min-width: 4920px;
+  width: 4920px;
+  max-width: 6000px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Verdana", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #eae9f2;
+}
+
+.main4 {
+  flex: 1 0 auto;
+  background-color: #ffffff;
+}
+
+/*///////////// Шапка ////////////////*/
+.page4-header {
+  flex: 0 0 auto;
+  margin-bottom: 0px;
+  background-color: #00ced1;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.page4-header .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 290px 212px;
+  background-color: #00ced1;
+}
+
+.page4-header a {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page4-title {
+  margin-left: 20px;
+  margin-bottom: 4px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000000; 
+}
+
+.page4-button {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 7px;
+  padding-right: 16px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #DCDCDC;
+  cursor: pointer;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.page4-button::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 7px;
+  left: 12px;
+}
+
+.page4-button:active { 
+  opacity: 0.8;
+}
+
+.page4-button:focus,
+.page4-button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.page4-button:focus {
+  outline-color: #C7FCEC;
+}
+
+.page4-button:focus::before,
+.page4-button:hover::before {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////*/
+/*///////////////////////// Подвал ////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////*/
+.page-footer {
+  color: #ffffff;
+  background-color: #00ced1;
+  flex: 0 0 auto;
+  height: 60px;
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+
+.page-footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-content {
+ padding-left: 20px;
+}
+
+.contacts-name {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/*/////////////////////////////////////////////////////////////////*/
+/*/////////////// Подсказки блока авторизации /////////////////////*/
+/*/////////////////////////////////////////////////////////////////*/
+::-webkit-input-placeholder {color:#3f3f44; padding-left: 10px;} /* Это стили для placeholder */
+::-moz-placeholder          {color:#3f3f44; padding-left: 10px;} /* Это стили для placeholder */
+:-moz-placeholder           {color:#3f3f44; padding-left: 10px;} /* Это стили для placeholder */
+:-ms-input-placeholder      {color:#3f3f44; padding-left: 10px;} /* Это стили для placeholder */
+
+/*/////////////////////////////////////////////////////////////////*/
