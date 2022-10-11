@@ -3,11 +3,10 @@
 			google.charts.load('current', {'packages':['bar']});
 			google.charts.setOnLoadCallback(drawBar);
 
-			function drawBar() {
-				var data = google.visualization.arrayToDataTable([			
-				['pDataTime', 'p1'],
+	function drawBar() {
+		var data = google.visualization.arrayToDataTable([			
+		['pDataTime', 'p1'],
 	<?php
-
 	# This query connects to the database and get the last readings
 	$sql = "SELECT p1, pDataTime FROM $db_table ORDER BY pIndex";
 

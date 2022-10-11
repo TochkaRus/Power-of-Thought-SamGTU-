@@ -6,6 +6,5 @@
 	  <p style="color: #000000;"><i>Телефон:</i> <a href="tel:<?= $phone ?>"><?= $phone ?></a></p>
 	</div>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@
 			<button onclick="location.href='index2.php'" class="page1-button" type="button">Диаграммы</button>
 			<button onclick="location.href='index3.php'" class="page1-button" type="button">Табличные значения</button>
 			<button onclick="location.href='index4.php'" class="page1-button" type="button">Подрядчики</button>
+			<button onclick="location.href='index5.php'" class="page1-button" type="button">Видеоконтроль</button>
 		</div>
 	</header>
 	<main class="main4">

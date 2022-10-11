@@ -321,6 +321,8 @@ input:focus {
 .diagrams {
   display: flex;
   flex-direction: row;
+  background-color: white;
+  
 }
 
 
